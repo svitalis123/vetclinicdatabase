@@ -5,5 +5,7 @@ create table animals(
     date_of_birth DATE,
     escape_attempts INT,
     neutered BOOLEAN,
-    weight_kg FLOAT
+    weight_kg FLOAT,
+    species VARCHAR(255)
 );
+ALTER table animals ADD species VARCHAR(255);
