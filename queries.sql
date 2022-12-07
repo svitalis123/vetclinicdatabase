@@ -25,8 +25,8 @@
  ROLLBACK TO CHICA;
  UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
  COMMIT;
-SELECT COUNT(*) FROM animals;
-SELECT COUNT(escape_attempts) FROM animals WHERE escape_attempts = 0;
-SELECT neutered, COUNT(escape_attempts) FROM animals GROUP BY neutered;
-SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
-SELECT species, AVG(escape_attempts), date_of_birth  FROM animals WHERE date_of_birth BETWEEN 'Jan 1, 1990' AND 'Dec 31, 2000' GROUP BY date_of_birth, species;
+ SELECT COUNT(*) FROM animals;
+ SELECT COUNT(escape_attempts) FROM animals WHERE escape_attempts = 0;
+ SELECT neutered, COUNT(escape_attempts) FROM animals GROUP BY neutered;
+ SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
+ SELECT species, AVG(escape_attempts), date_of_birth  FROM animals WHERE date_of_birth BETWEEN 'Jan 1, 1990' AND 'Dec 31, 2000' GROUP BY date_of_birth, species;
