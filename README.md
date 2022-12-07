@@ -70,11 +70,6 @@ After you're finished please remove all the comments and instructions!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Loom video <a name="live-demo"></a>
-
-> A video Explaining The app
-- [Loom Video](https://www.loom.com/share/9a2411e8409d42c89e45e458f1a4ce84)
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -134,8 +129,7 @@ If you like this project create an issue with your comments.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would like to thank [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for inspiring the design. 
-- [Rest Countries](https://restcountries.com/) for the API
+- I would love to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
