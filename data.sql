@@ -36,4 +36,11 @@ UPDATE animals SET owner_id=22 WHERE name =  'Blossom';
 UPDATE animals SET owner_id=23 WHERE name =  'Angemon';
 UPDATE animals SET owner_id=23 WHERE name =  'Boarmon';
 COMMIT;
-
+BEGIN;
+INSERT INTO vets(name, age, date_of_graduation) VALUES('William Tatcher', 45, 'Apr 23, 2000'),('Maisy Smith', 26, 'Jan 17, 2019'), ('Stephanie Mendez', 64, 'May 4, 1981'), ('Jack Harkness', 38, 'Jun 8, 2008');
+INSERT INTO specializations(species_id, vet_id) VALUES (1, 12),(3,12),(3,13),(4, 13);
+COMMIT;
+ALTER TABLE visits ADD date DATE;
+BEGIN;
+INSERT INTO visits(animal_id, vet_id, date) VALUES (12, 1, 'May 24, 2020'),(12, 3, 'Jul 22, 2020'),(13, 4, 'Feb 2, 2021'), (14, 2, 'Jan 5, 2020'),(14, 2, 'Mar 8, 2020'),(14, 2,'May 14, 2020'), (15, 3, 'May 4, 2021'), (16, 4, 'Feb 24, 2021'), (17, 2, 'Dec 21, 2019'), (17, 1, 'Aug 10, 2020'), (17, 2, 'Apr 7, 2021'), (18, 3, 'Sep 29, 2019'), (19, 4, 'Oct 3, 2020'), (19, 4, 'Nov 4, 2020'),(20, 2, 'Jan 24, 2019'), (20, 2, 'May 15, 2019'), (20, 2, 'Feb 27, 2020'),(20,2, 'Aug 3, 2020'), (21, 3, 'May 24, 2020'), (21, 1, 'Jan 11, 2021');
+COMMIT;
